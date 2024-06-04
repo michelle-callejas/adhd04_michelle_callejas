@@ -89,14 +89,23 @@ Además, los parámetros pueden ser combinados.
 
 ### _Problemas a resolver_
 >#1. Calcular el promedio de tres números ingresados.
+
 >#2. Calcular el área de un triángulo, el usuario debe ingresar el valor para la base y altura.
+
 >#3. Determinar si un número es par o impar.
+
 >#4. Encontrar el mayor y menor de tres números ingresados.
+
 >#5. Elevar un número a una potencia, los valores deben ser ingresados por el usuario.
->#6. Mostrar de forma inversa un texto ingresado por el usuario.
+
+>#6. Mostrar de forma inversa un texto ingresado por el usuario
+
 >#7. Calcular el factorial de un número ingresado.
+
 >#8. Indicar si un valor ingresado es un número perfecto.
->#9. Verificar si un valor ingresado es un número primo.
+
+>#9. Verificar si un valor ingresado es un número primo
+
 >#10. Contar las vocales existentes en un texto ingresado.
 
 
