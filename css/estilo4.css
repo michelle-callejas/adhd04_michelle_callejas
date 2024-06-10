@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(45deg, white, rgba(213, 146, 40, 0.601), white, rgba(133, 197, 80, 0.692), rgba(219, 168, 177, 0.768));
+  background: linear-gradient(45deg, white, rgba(197, 185, 166, 0.601), rgb(217, 147, 147), rgba(85, 114, 62, 0.692), rgba(38, 216, 157, 0.768));
   animation: color 12s ease-in-out infinite;
   background-size: 300% 300%;
 }
@@ -154,4 +154,4 @@ main p {
   padding: 10px;
 }
 
-/*# sourceMappingURL=estilo1.css.map */
+/*# sourceMappingURL=estilo4.css.map */
