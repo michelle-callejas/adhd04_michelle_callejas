@@ -1,38 +1,68 @@
-$ancho: calc(100%/11);
+$ancho: calc(100% / 11);
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 $font-stack: "Varela Round", sans-serif;
 
-
-*{
+* {
     font-size: $font-stack;
 }
 
+body {
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-stack;
+}
+
+.container {
+    margin: auto;
+    padding: auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, white, rgba(213, 146, 40, 0.601), white, rgba(133, 197, 80, 0.692), rgba(219, 168, 177, 0.768));
+    animation: color 12s ease-in-out infinite;
+    background-size: 300% 300%;
+
+    @keyframes color {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
 header {
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 80px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.535);
     display: flex;
     justify-content: center;
-    justify-items: center;
     padding-bottom: 20px;
     border-radius: 50px;
-
-
+    z-index: 1;
 
     nav {
         height: 80px;
         width: 100%;
 
-      
-
         ul {
-        
-           height: 60px;
-          
+            height: 60px;
             font-size: x-large;
             font-weight: 500;
             list-style: none;
-            font-family: $font-stack;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -46,12 +76,10 @@ header {
                 padding: 10px;
 
                 img {
-                    
                     height: 100%;
                     width: 100%;
                     margin-bottom: 10px;
                 }
-               
 
                 a {
                     text-decoration: none;
@@ -60,7 +88,7 @@ header {
                     &:hover {
                         margin: 5px;
                         padding: 6px;
-                        color:white;
+                        color: white;
                         background-color: rgba(54, 51, 51, 0.564);
                     }
                 }
@@ -69,46 +97,16 @@ header {
     }
 }
 
-hr{
-    border-radius: 50px;
-    border-width: 2px;
-    border-color: #94ecf6ed;   
-}
 
-body {
-    margin: 0;
+
+main {
     padding: 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
     text-align: center;
-    display: grid;
-    grid: 40%;
-    justify-content: space-around;
-    font-family: $font-stack;
-    align-items: center;
+    z-index: 1;
 
-    svg {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    @keyframes girarIzquierda {
-        60% {
-            transform: rotate(-360deg);
-        }
-    }
-
-    @keyframes girarDerecha {
-        60% {
-            transform: rotate(360deg);
-        }
-    }
-
-    h1{
+    h1 {
         margin: 10px;
         padding: 10px;
         text-align: center;
@@ -117,50 +115,68 @@ body {
         font-size: 45px;
     }
 
+    div {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
 
-    .azul {
-        animation: girarDerecha 25s linear infinite;
-        transform-origin: 84px 93px;
-    }
+        form {
 
-    .rosa {
-        animation: girarIzquierda 35s linear infinite;
-        transform-origin: 84px 93px;
-    }
+            margin: 10px;
+            padding: 18px;
+            font-size: $font-stack;
+            width: 30%;
+            background-color: rgba(143, 190, 199, 0.254);
+            border-radius: 40px;
+            border: 2px solid rgba(38, 122, 125, 0.551);
 
-}
+            label {
+                text-align: left;
+                display: block;
+                margin-bottom: 8px;
+            }
 
-div{
-    margin: auto;
-    padding: auto;
-    justify-self: center;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    h1{
-        text-align: center;
-    }
-    form{
-        text-align: left;
-        margin: 10px;
-        padding: 18px;
-        font-size: $font-stack;
-        width: 40%;
-        background-color: rgba(143, 190, 199, 0.42);
-        border-radius: 40px;
-        border: 2px solid rgba(38, 122, 125, 0.551);
+            .number {
+                font-family: $font-stack;
+                justify-content: space-around;
+                margin: auto;
+                border: 0;
+                background-color: rgba(63, 141, 189, 0.466);
+                width: 100%;
+                height: 30px;
+                border-radius: 30px;
+                justify-self: center;
+                margin-bottom: 16px;
+            }
 
-        label
-    {
-        text-align: left;
-    }
-      input {
-        border: 0;
-        background-color: rgba(63, 141, 189, 0.774);
-        width: 50%;
-        height: 30px;
-        border-radius: 30px;
-
+            .boton {
+                font-size: large;
+                font-family: $font-stack;
+                justify-content: space-around;
+                margin: auto;
+                width: auto;
+                height: 50px;
+                border-radius: 40px;
+                background-color: rgba(63, 141, 189, 0.466);
+            }
         }
     }
+
+
+
+    p {
+        font-family: $font-stack;
+        display: flex;
+        font-size: x-large;
+        background-color: rgb(164, 207, 208);
+        width: 20%;
+        border: 1px solid rgba(0, 0, 0, 0.351);
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+
 }

@@ -3,15 +3,50 @@
   font-size: "Varela Round", sans-serif;
 }
 
+body {
+  position: relative;
+  margin: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.container {
+  margin: auto;
+  padding: auto;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, white, rgba(213, 146, 40, 0.601), white, rgba(133, 197, 80, 0.692), rgba(219, 168, 177, 0.768));
+  animation: color 12s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 header {
+  padding: 0;
+  margin: 0;
   width: 100%;
   height: 80px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.535);
   display: flex;
   justify-content: center;
-  justify-items: center;
   padding-bottom: 20px;
   border-radius: 50px;
+  z-index: 1;
 }
 header nav {
   height: 80px;
@@ -22,7 +57,6 @@ header nav ul {
   font-size: x-large;
   font-weight: 500;
   list-style: none;
-  font-family: "Varela Round", sans-serif;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -51,43 +85,14 @@ header nav ul li a:hover {
   background-color: rgba(54, 51, 51, 0.564);
 }
 
-hr {
-  border-radius: 50px;
-  border-width: 2px;
-  border-color: rgba(148, 236, 246, 0.9294117647);
-}
-
-body {
-  margin: 0;
+main {
   padding: 0;
+  margin: 0;
   width: 100%;
-  height: 100%;
   text-align: center;
-  display: grid;
-  grid: 40%;
-  justify-content: space-around;
-  font-family: "Varela Round", sans-serif;
-  align-items: center;
-}
-body svg {
-  position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
-@keyframes girarIzquierda {
-  60% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes girarDerecha {
-  60% {
-    transform: rotate(360deg);
-  }
-}
-body h1 {
+main h1 {
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -95,45 +100,58 @@ body h1 {
   font-weight: 900;
   font-size: 45px;
 }
-body .azul {
-  animation: girarDerecha 25s linear infinite;
-  transform-origin: 84px 93px;
-}
-body .rosa {
-  animation: girarIzquierda 35s linear infinite;
-  transform-origin: 84px 93px;
-}
-
-div {
-  margin: auto;
-  padding: auto;
-  justify-self: center;
-  width: 80%;
+main div {
+  margin: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
-div h1 {
-  text-align: center;
-}
-div form {
-  text-align: left;
+main div form {
   margin: 10px;
   padding: 18px;
   font-size: "Varela Round", sans-serif;
-  width: 40%;
-  background-color: rgba(143, 190, 199, 0.42);
+  width: 30%;
+  background-color: rgba(143, 190, 199, 0.254);
   border-radius: 40px;
   border: 2px solid rgba(38, 122, 125, 0.551);
 }
-div form label {
+main div form label {
   text-align: left;
+  display: block;
+  margin-bottom: 8px;
 }
-div form input {
+main div form .number {
+  font-family: "Varela Round", sans-serif;
+  justify-content: space-around;
+  margin: auto;
   border: 0;
-  background-color: rgba(63, 141, 189, 0.774);
-  width: 50%;
+  background-color: rgba(63, 141, 189, 0.466);
+  width: 100%;
   height: 30px;
   border-radius: 30px;
+  justify-self: center;
+  margin-bottom: 16px;
+}
+main div form .boton {
+  font-size: large;
+  font-family: "Varela Round", sans-serif;
+  justify-content: space-around;
+  margin: auto;
+  width: auto;
+  height: 50px;
+  border-radius: 40px;
+  background-color: rgba(63, 141, 189, 0.466);
+}
+main p {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  font-size: x-large;
+  background-color: rgb(164, 207, 208);
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.351);
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=estilo1.css.map */
