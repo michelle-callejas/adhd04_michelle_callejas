@@ -30,4 +30,14 @@ class OperacionesPoo{
 
 //finaliza clase, un archivo por clase
 //crear objetos, de preferencia en otro archivo. 
+//instanciar= crear un objeto
+//clases con mayúscula
 
+const operacionesPoo= new OperacionesPoo();
+
+function realizarSuma(){
+    operacionesPoo.asignarNumero1(10);
+    operacionesPoo.asignarNumero2(20);
+    console.log(operacionesPoo.sumar());
+    console.log(operacionesPoo.restar());
+}
