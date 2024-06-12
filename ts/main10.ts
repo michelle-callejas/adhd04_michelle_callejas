@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function obtenerDatos(event: Event) {
-        event.preventDefault(); // Prevenir el comportamiento por defecto
+        event.preventDefault();
         if (cTexto.value !== null && cTexto.value.trim() !== "") {
             let result = contarVocales(cTexto.value);
             resultado.textContent = "El número de vocales es: " + result;
