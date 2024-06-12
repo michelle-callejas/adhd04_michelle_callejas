@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function invertirTexto(event: Event) {
-        event.preventDefault(); 
+        event.preventDefault();
         const texto = cTexto.value;
         if (texto === '') {
             imprimirTextoVolteado.textContent = "Por favor ingrese un texto.";
